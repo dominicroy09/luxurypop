@@ -4,20 +4,23 @@
     box-sizing: border-box;
 }
 
+/*
+background-image: url('../img/img2.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+*/
 
 /*................body section styling ................*/
 
 body {
-    background: linear-gradient(to bottom, #0e0d0d, #070b26);
+    background-color: white;
     height: 100%;
     margin: 0px;
 }
 
 header {
-    background-image: url('../img/img2.jpg');
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
+    background-color: rgb(255, 253, 253);
 }
 
 /*.............navigation styling ...................*/
@@ -32,7 +35,7 @@ header {
 }
 
 .address {
-    color: white;
+    color: rgb(9, 9, 9);
     font-weight: 500;
     text-align: center;
     margin: 0px;
@@ -96,17 +99,12 @@ header {
 
 
 .nav-btm {
-    background-color: #931212;
-    border-top: 1px solid #710c0c;
-    border-bottom: 1px solid #710c0c;
+    background-color: rgb(9, 0, 32);
     width: auto;
-    margin: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    position: sticky;
-    top: 20px;
 
 }
 
@@ -303,6 +301,8 @@ header {
 .banner {
     width: 100%;
     padding: 10px;
+    margin: 0px;
+
 }
 
 .banner-left {
@@ -310,7 +310,7 @@ header {
 }
 
 .banner-left h1 {
-    color: white;
+    color: rgb(21, 20, 20);
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
@@ -319,7 +319,7 @@ header {
 }
 
 .gradient-text {
-    background: radial-gradient(circle, #ffff9e, #ecfa28);
+    background: radial-gradient(circle, #ea0000, #630000);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -329,7 +329,7 @@ header {
 }
 
 .banner-left p {
-    color: white;
+    color: rgb(14, 14, 14);
     text-align: center;
     margin: 10px 0px;
 }
@@ -413,14 +413,14 @@ header {
 /*...................form section styling.......................*/
 
 .banner-right {
-    background-color: #931212;
-    border-top: 1px solid #710c0c;
-    border-bottom: 1px solid #710c0c;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    margin: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 20px;
+    background: rgb(9, 0, 50);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     padding: 35px;
     position: relative;
 
@@ -498,7 +498,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
 
-    background: #b41a1a;
+    background: rgb(5, 5, 32);
     color: #fcfcfc;
 
     font-size: 15px;
@@ -597,8 +597,8 @@ header {
         display: flex;
         align-items: start;
         justify-content: space-between;
-        padding: 50px;
         gap: 5rem;
+        padding: 50px;
     }
 
     .banner-right {
@@ -651,10 +651,10 @@ header {
 
 /*.....................factor section styling .............................*/
 .factor {
-    background-color: #931212;
-    border-top: 1px solid #710c0c;
-    border-bottom: 1px solid #710c0c;
+    background-color: white;
+    border-top: 1px solid gray;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .factor h3 {
@@ -666,10 +666,11 @@ header {
 }
 
 .factor h1 {
-    color: white;
+    color: rgb(14, 13, 13);
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0px;
+    font-size: 1.8rem;
 }
 
 .factor-cards {
@@ -703,9 +704,7 @@ header {
 
 .factor-card {
     border: 1px solid black;
-    background-color: #560000;
-    border-top: 1px solid #710c0c;
-    border-bottom: 1px solid #710c0c;
+    background-color: rgb(9, 0, 50);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -742,9 +741,8 @@ header {
 
 .solution {
     padding: 20px;
-    background-color: #931212;
-    border-top: 1px solid #710c0c;
-    border-bottom: 1px solid #710c0c;
+    background-color: white;
+    border-top: 1px solid gray;
 }
 
 
@@ -756,14 +754,17 @@ header {
 }
 
 .sol-top-left h1 {
-    color: white;
-    text-transform: capitalize;
+    color: rgb(7, 7, 7);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 10px 0px ;
 }
 
 .sol-top-right h2 {
     color: red;
     margin-top: 10px;
     text-transform: capitalize;
+    font-size: 1rem;
 }
 
 @media (min-width:768px) {
@@ -793,7 +794,7 @@ header {
     min-height: 420px;
     padding: 15px;
     border-radius: 15px;
-    background: #790404;
+   background-color: rgb(9, 0, 50);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -891,11 +892,9 @@ header {
 
 .calculation {
     width: 100%;
-    padding: 25px;
-    background-image: url('../img/img2.jpg');
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
+    padding: 15px;
+    background-color: white;
+    border-top: 1px solid gray;
 
 }
 
@@ -906,12 +905,12 @@ header {
 }
 
 .calculation h1 {
-    color: white;
+    color: rgb(13, 13, 13);
     text-transform: uppercase;
     text-transform: uppercase;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 20px 0px;
 }
 
@@ -928,7 +927,7 @@ header {
 }
 
 .calculation p {
-    color: white;
+    color: rgb(18, 17, 17);
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 20px;
@@ -1066,16 +1065,15 @@ header {
 
 /*...........................reviews section sytling ..................*/
 .reviews {
-    background-color: #931212;
+   background-color: white;
     border-top: 1px solid #710c0c;
-    border-bottom: 1px solid #710c0c;
     padding: 20px;
 }
 
 @media (min-width:768px) {
     .reviews {
-        padding: 20px;
-       
+        padding: 50px;
+
     }
 }
 
@@ -1089,16 +1087,18 @@ header {
 }
 
 .reviews h1 {
-    color: white;
+    color: rgb(19, 19, 19);
     text-transform: uppercase;
     text-align: center;
+    font-size: 2rem;
+    margin: 10px 0px;
 }
 
 .review-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin: 20px;
+    padding: 10px 0px;
 }
 
 @media (min-width:768px) {
@@ -1197,34 +1197,33 @@ header {
 
 
 .visit {
-    background-image: url('../img/img2.jpg');
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
     padding: 20px;
+    background-color: white;
+    border-top: 1px solid gray;
 }
 
 .visit-left h3 {
     color: red;
     text-transform: uppercase;
     align-items: start;
-    margin: 20px 10px;
+    
 
 }
 
 .visit-left h1 {
-    color: white;
+    color: rgb(8, 8, 8);
     text-transform: uppercase;
     text-align: start;
-    margin: 10px;
+    font-size: 2rem;
+    margin: 10px 0px;
 }
 
 .visit-left p {
-    color: white;
+    color: rgb(17, 16, 16);
     text-transform: capitalize;
     text-align: start;
-    margin: 10px;
     opacity: 0.5;
+    margin-bottom: 10px;
 }
 
 .visit-btm {
@@ -1251,13 +1250,13 @@ header {
 }
 
 .visit-left-btm h4 {
-    color: white;
+    color: rgb(23, 23, 23);
     text-transform: uppercase;
     font-size: 1rem;
 }
 
 .visit-left-btm h5 {
-    color: white;
+    color: rgb(17, 17, 17);
     text-transform: uppercase;
     font-size: 0.7rem;
     opacity: 0.5;
@@ -1268,6 +1267,7 @@ header {
 @media (min-width:1024px) {
     .visit {
         display: flex;
+        padding: 50px ;
     }
 
     .visit-left {
@@ -1394,6 +1394,15 @@ header {
 
 .footer-service i {
     color: yellow;
+}
+
+.footer-quick-link{
+    display: none;
+}
+@media (min-width:768px) {
+    .footer-quick-link{
+        display: block;
+    }
 }
 
 .nav-top {
